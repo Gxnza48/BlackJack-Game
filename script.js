@@ -136,7 +136,7 @@ function endGame(message) {
 
 
 // Variables para el manejo de las apuestas
-let saldo = parseInt(localStorage.getItem("saldo")) || 10000;
+let saldo = 10000;
 let apuesta = 0;
 
 function placeBet(amount) {
@@ -172,10 +172,11 @@ function repeatBet() {
 }
 
 function updateSaldo() {
-    localStorage.setItem("saldo", saldo);
+    // Puedes realizar acciones adicionales si es necesario
     document.getElementById("current-saldo").textContent = `${saldo}$`;
 }
 
 function updateApuesta() {
+    // Puedes realizar acciones adicionales si es necesario
     document.getElementById("current-apuesta").textContent = `${apuesta}$`;
 }

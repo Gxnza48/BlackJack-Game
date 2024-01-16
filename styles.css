@@ -160,3 +160,39 @@ button:hover {
     font-size: 24px;
     font-weight: bold;
 }
+
+
+.cookie-popup {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    max-width: 300px;
+    padding: 15px;
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    border-radius: 25px;
+}
+
+.cookie-popup p {
+    margin: 0;
+}
+
+.cookie-popup button {
+    margin-top: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.cookie-popup button:hover {
+    background-color: #45a049;
+}
